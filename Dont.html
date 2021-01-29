@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   
+      <title>Move an Image</title>
+    <!-- </font> -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+       html { overflow-x: hidden; }
+
+      * {
+        /* border :solid; */
+        background-color:#14C346
+      }
+      .dropbtn {
+        background-color:  rgba(5, 22, 255, 0.76);
+        color: rgb(7, 6, 6);
+        padding: 16px;
+      
+        border: none;
+
+        padding: 15px 32px;
+   text-align: center;
+   text-decoration:none;
+   display: inline-block;
+   font-size: 20px;
+   margin: 10px 2px;
+   cursor: pointer; 
+   border-radius: 16px;
+       }
+
+      .dropdown {
+        display: flex;
+        /* justify-content : space-between; */
+        /* position: relative; */
+        display: inline-block;
+        /* margin-left: 500px; */
+        padding: 15px 32px;
+   text-align: center;
+   text-decoration:none;
+   display: inline-block;
+   font-size: 20px;
+   margin: 10px 2px;
+   cursor: pointer;
+       
+       
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #fd0808;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(196, 6, 6, 0.952);
+        z-index: 1;
+      }
+
+      .dropdown-content a {
+        display:flex;
+        /* align-items: space-between; */
+        justify-content: space-between;
+        color: rgb(68, 33, 224);
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+
+      .dropdown-content a:hover {
+        display: block;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+        background-color: #ddd;
+      }
+
+      .dropdown:hover .dropbtn {
+        background-color: #21c5f7;
+        border: none;
+  
+   
+      }
+      h1 {
+        text-align: center;
+      }
+
+      .blink {
+        animation: blinker 0.6s linear infinite;
+        color: #0f053d;
+        font-size: 55px;
+        font-weight: bold;
+        font-family: sans-serif;
+      }
+      @keyframes blinker {
+        50% {
+          opacity: 0;
+        }
+      }
+
+      .dos{
+        
+    
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* align-items: space-between; */
+        text-align: center;
+       border: 3px solid blue;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="heading">
+      
+      <h1><b> <i>
+        
+      
+
+      <p class="blink">ROAD SAFETY</p>
+    </b>
+    </h1>
+  </i>
+  </h1>
+</div>
+
+
+
+    <!-- <div style="margin-left: 0px; border: 0px; height: 300px; width: 350px"> -->
+    
+
+    <center>
+      <marquee hspace=10
+        bgcolor="transparent"
+        scrollamount="50"
+        direction="left"
+        width="2000px;"
+        style="float: left; position: relative"
+        loop="true"
+        height="300px"
+        onmouseover="this.stop()"
+        onmouseout="this.start()"
+      >
+        <img src="img1.jpg" width="1000" height="200" />
+        <img src="img2.jpg" width="1000" height="200" />
+        <img src="img3.jpg" width="1000" height="200" />
+      </marquee>
+    </center>
+   
+    <div class="dropdown">
+      
+        <button class="dropbtn" style = "margin:0px">Home</button>
+        <div class="dropdown-content">
+          <a href="index.html">Home</a>
+          
+              
+       
+      </div>
+      </div>
+    <div class="dropdown">
+
+      <button class="dropbtn" style = "margin :0px">Do's and Don'ts</button>
+      <div class="dropdown-content">
+        <a href="Dos.html">Do's</a>
+        <a href="Dont.html">Dont's</a>
+        
+      </div>
+    </div>
+
+    <div class="dropdown">
+
+      <button class="dropbtn" style = "margin :0px">Dropdown</button>
+      <div class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        
+      </div>
+    </div>
+
+    <div class="dropdown">
+
+      <button class="dropbtn" style = "margin :0px">Dropdown</button>
+      <div class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        
+      </div>
+    </div>
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="dos"> 
+        
+
+        <!--       
+                <div class="item"> -->
+        
+                   <img src="images/Dos/Indicators.jpg"  width="200" height="200">
+        
+                   <figure>
+                    <figcaption><b>Use Indicators</b></figcaption>
+                  </figure>
+        
+        
+                <!-- <div class="item"> -->
+                  <img src="images/Dos/Keep left.jpg"  width="200" height="200">
+        
+                  <figure>
+                    <figcaption>Always keep left </figcaption>
+                  </figure>
+                
+               
+               <!-- <div class="item"> -->
+                <img src="images/Dos/AmbulanceFirst.jpg"  width="200" height="200">
+                
+                <figure>
+                  <figcaption>Give first preference to Ambulance</figcaption>
+                </figure>
+          
+             
+               <!-- <div class="item"> -->
+                <img src="images/Dos/HelpTheperson.jpg"  width="200" height="200">
+                <figure>
+                  <figcaption>Help the person who is in need</figcaption>
+                </figure>
+        
+        
+        
+               <!-- <div class="item"> -->
+                <img src="images/Dos/Seatbelts.jpg"  width="200" height="200">
+                <figure>
+                  <figcaption>Follow Speed limits</figcaption>
+                </figure>
+              
+        
+              
+               <!-- <div class="item"> -->
+                <img src="images/Dos/Speed limit.jpg"  width="200" height="200">
+               <figure>
+                <figcaption>Follow Speed limits.</figcaption>
+              </figure>
+        
+        
+               <!-- <div class="item"> -->
+                 <img src="images/Dos/TrafficRules.jpg"  width="200" height="200">
+        
+                 <figure> 
+                  <figcaption>Follow Traffic rules</figcaption>
+                 </figure>
+        
+                 <!-- <div class="item"> -->
+                <img src="images/Dos/wearHelmets.jpg"  width="200" height="200">
+                <figure>
+                 <figcaption>Use Helmet</figcaption>
+               </figure>
+               
+                <!-- <img src="images/Dos/Indicators.jpg"  width="200" height="200"> -->
+            
+    </div>
+
+  </body>
+</html>
